@@ -1,0 +1,72 @@
+.cards-inventory {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto 5vh;
+    margin-top: 16vh;
+    animation-duration: 250ms;
+    animation-name: fadeout;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+  }
+  .cards-inventory .category-container {
+    display: flex;
+    flex-shrink: 0;
+    width: 46vw;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .cards-inventory .category-container .top-container {
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 1vh;
+  }
+  .cards-inventory .category-container .top-container .title {
+    height: 5vh;
+    font-size: 3vh;
+    font-weight: bold;
+    overflow: hidden;
+    color: white;
+  }
+  .cards-inventory .category-container .cards-list-container {
+    display: grid;
+    height: 72vh;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1vh;
+    overflow: hidden auto;
+  }
+  .cards-inventory .category-container .cards-list-container .id-card {
+    flex-shrink: 0;
+    width: 40vh;
+    height: 24vh;
+  }
+  .cards-inventory .category-container .cards-list-container::-webkit-scrollbar {
+    display: none;
+  }
+  .cards-inventory .cards-show-container {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10vh;
+    font-family: "Purista Medium";
+    opacity: 0.6;
+    transition: all ease-in-out 0.3s;
+    border: 1px solid rgba(226, 226, 226, 0.3);
+    margin: 4vh;
+  }
+  .cards-inventory .cards-show-container .show-instructions {
+    font-size: 3vh;
+    padding-top: 2vh;
+  }
+  .cards-inventory .cards-show-container:hover {
+    opacity: 1;
+  }
+  
